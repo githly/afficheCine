@@ -1,0 +1,83 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'seven_swordsmen_bbregular';
+    src: url('polices/sevesbrg-webfont.woff2') format('woff2'),
+         url('polices/sevesbrg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('polices/the_walking_dead-webfont.woff2') format('woff2'),
+         url('polices/the_walking_dead-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* General styles for containers blocks */
+
+main {
+  display:flex;
+  flex-wrap:wrap;
+  max-width:100%;
+}
+
+img{
+  max-width:100%;
+}
+
+div {
+  width:31%;
+  margin:1%;
+  padding:1%;
+  border:2px solid #dedede;
+  box-sizing: border-box;
+}
+
+/* General styles for h Titles */
+
+h1 {
+  font-family: 'seven_swordsmen_bbregular';
+  text-align:center;
+}
+
+h2{
+  font-family: 'webfontregular';
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+/* Div blocks with special styles */
+
+div#ca {
+  position:relative;
+}
+
+div.flex{
+  display:flex;
+}
+
+/* H titles special styles*/
+
+h2.sda{
+    font-family: 'seven_swordsmen_bbregular';
+}
+
+h2.sda#ca{
+  position:absolute;
+  bottom:20%;
+  left:15%;
+}
+
+/* Media Queries */
