@@ -10,33 +10,33 @@
 }
 
 /* General Structure */
-
+/* Using flex to center and vertical align with vh */
 
 body {
-    margin: 0;
-    display:flex;
-    justify-content: center;
+  margin: 0;
+  display:flex;
+  justify-content: center;
 }
 
-#poster {
-    background:url("images/walking-dead.jpg") center no-repeat;
-    background-size:cover;
+#poster { /* add background Image */
+  background:url("images/walking-dead.jpg") center no-repeat;
+  background-size:cover;
 }
 
-.credits {
-    display: flex;
-    justify-content: center;
-    margin-top:48vh;
-    margin-bottom:4vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
+#credits { /* Centered Container at the bottom of the poster */
+  display: flex;
+  justify-content: center;
+  margin-top:48vh; /* Space Between h1 & #credits */
+  margin-bottom:4vh; /* Space Between #credits & Bottom */
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 
 /* h Titles structure */
 
 p {
-  margin-top:11vh;
-  margin-bottom: 0.3vh;
+  margin-top:11vh; /* Space Between Top & p */
+  margin-bottom: 0.3vh; /* Space Between p & h1 */
   margin-left:10vh;
   font-size:3vh;
   font-family: 'dead_kansasregular';
@@ -45,42 +45,41 @@ p {
 }
 
 h1 {
+  margin-top:0;
+  margin-left: 2vh;
+  margin-right: 2vh;
   text-align: center;
   font-family: 'dead_kansasregular';
   font-size: 6vh;
   color: black;
-  margin-top:0;
-  margin-left: 2vh;
-  margin-right: 2vh;
 }
 
 h2 {
-    font-family: Titre, sans-serif;
-    font-size: 3vh;
-    margin: 0px;
-
+  margin: 0px;
+  font-family: Titre, sans-serif;
+  font-size: 3vh;
 }
 
 h3 {
-    font-family: 'Helvetica Neue';
-    font-size: 4vh;
-    font-weight: bold;
-    margin: 0px;
-    color:white;
-    line-height: 1.5em;
-    border:4px solid #A79C71;
-    box-sizing:border-box;
+  margin: 0px;
+  font-family: 'Helvetica Neue';
+  font-size: 4vh;
+  font-weight: bold;
+  color:white;
+  line-height: 1.5em;
+  border:4px solid #A79C71;
+  box-sizing:border-box;
 }
 
 /* Styles for list in credits */
 
 ul, li {
-  list-style-type: none;
-  font-size:3vh;
-  padding-right:0.5vh;
-  padding-left: 0;
   margin-top:0px;
   margin-bottom: 0px;
+  padding-right:0.5vh;
+  padding-left: 0;
+  list-style-type: none;
+  font-size:3vh;
   text-transform:uppercase;
 }
 
