@@ -1,83 +1,93 @@
 /* Fonts */
 
 @font-face {
-    font-family: 'seven_swordsmen_bbregular';
-    src: url('polices/sevesbrg-webfont.woff2') format('woff2'),
-         url('polices/sevesbrg-webfont.woff') format('woff');
+    font-family: 'dead_kansasregular';
+    src: url('polices/dead_kansas-webfont.woff2') format('woff2'),
+         url('polices/dead_kansas-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@font-face {
-    font-family: 'webfontregular';
-    src: url('polices/the_walking_dead-webfont.woff2') format('woff2'),
-         url('polices/the_walking_dead-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/* General Structure */
 
+
+body {
+    margin: 0;
+    display:flex;
+    justify-content: center;
 }
 
-
-/* General styles for containers blocks */
-
-main {
-  display:flex;
-  flex-wrap:wrap;
-  max-width:100%;
+#poster {
+    background:url("images/walking-dead.jpg") center no-repeat;
+    background-size:cover;
 }
 
-img{
-  max-width:100%;
+.credits {
+    display: flex;
+    justify-content: center;
+    margin-top:48vh;
+    margin-bottom:4vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 
-div {
-  width:31%;
-  margin:1%;
-  padding:1%;
-  border:2px solid #dedede;
-  box-sizing: border-box;
-}
+/* h Titles structure */
 
-/* General styles for h Titles */
+p {
+  margin-top:14vh;
+  margin-bottom: 0.3vh;
+  margin-left:10vh;
+  font-size:3vh;
+  font-family: 'dead_kansasregular';
+  font-weight: lighter;
+  text-transform: uppercase;
+}
 
 h1 {
-  font-family: 'seven_swordsmen_bbregular';
-  text-align:center;
+  text-align: center;
+  font-family: 'dead_kansasregular';
+  font-size: 6vh;
+  color: black;
+  margin-top:0;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 
-h2{
-  font-family: 'webfontregular';
-}
-
-h3{
-
-}
-
-h4{
+h2 {
+    font-family: Titre, sans-serif;
+    font-size: 3vh;
+    margin: 0px;
 
 }
 
-/* Div blocks with special styles */
-
-div#ca {
-  position:relative;
+h3 {
+    font-family: 'Helvetica Neue';
+    font-size: 4vh;
+    font-weight: bold;
+    margin: 0px;
+    color:white;
+    line-height: 1.5em;
+    border:4px solid #A79C71;
+    box-sizing:border-box;
 }
 
-div.flex{
-  display:flex;
+/* Styles for list in credits */
+
+ul, li {
+  list-style-type: none;
+  font-size:3vh;
+  padding-right:0.5vh;
+  padding-left: 0;
+  margin-top:0px;
+  margin-bottom: 0px;
+  text-transform:uppercase;
 }
 
-/* H titles special styles*/
-
-h2.sda{
-    font-family: 'seven_swordsmen_bbregular';
+li:first-child {
+  color:#A79C71;
 }
 
-h2.sda#ca{
-  position:absolute;
-  bottom:20%;
-  left:15%;
+li:last-child {
+  color:white;
 }
-
-/* Media Queries */
